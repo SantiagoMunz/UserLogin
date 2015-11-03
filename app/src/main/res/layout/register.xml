@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+	<GridLayout
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"  
+	    android:orientation="horizontal"  
+	    android:padding="15dip"  
+        android:layout_margin="15dip" 
+	    android:rowCount="8"  
+	    android:columnCount="2" > 
+	    
+	    <!-- username -->
+		<TextView  
+			android:id="@+id/login_user_input"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:layout_alignParentTop="true"  
+			android:layout_marginTop="5dp"  
+			android:text="@string/login_label_username"  
+		/> 
+		        
+		<EditText  
+			android:id="@+id/username_edit"  
+			android:layout_width="fill_parent"  
+			android:layout_height="wrap_content"  
+			android:hint="@string/login_username_hint"  
+			android:inputType="text"/>
+		
+		<!-- password -->
+		<TextView  
+		     android:id="@+id/login_password_input"  
+		     android:layout_width="wrap_content"  
+		     android:layout_height="wrap_content"  
+		     android:layout_below="@id/username_edit"  
+		     android:layout_marginTop="3dp"  
+		     android:text="@string/login_label_password"  
+		     /> 
+		      
+		<EditText  
+			     android:id="@+id/password_edit"  
+			     android:layout_width="fill_parent"  
+			     android:layout_height="wrap_content"  
+			     android:hint="@string/login_password_hint"  
+			     android:password="true"  
+			     android:singleLine="true"  
+			     android:inputType="textPassword"  
+		/> 
+			
+		<!-- password reinput -->
+		<TextView  
+			android:id="@+id/login_mail_reinput"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:layout_marginTop="3dp" 
+			android:text="@string/login_label_password_reinput"  
+		/> 
+			      
+		<EditText  
+			android:id="@+id/password_reinput_edit"  
+			android:layout_width="fill_parent"  
+			android:layout_height="wrap_content" 
+			android:hint="@string/login_password_reinput_hint"
+			android:inputType="textPassword"  
+		/>	
+		
+		<!-- mail -->
+		<TextView  
+		     android:id="@+id/login_mail_input"  
+		     android:layout_width="wrap_content"  
+		     android:layout_height="wrap_content"  
+		     android:layout_marginTop="3dp"  
+		     android:text="@string/login_label_mail"  
+		     /> 
+		      
+		<EditText  
+			     android:id="@+id/mail_edit"  
+			     android:layout_width="fill_parent"  
+			     android:layout_height="wrap_content" 
+			     android:hint="@string/login_mail_hint" 
+			     android:singleLine="true"  
+		/> 
+		
+		<!-- firstname -->
+		<TextView  
+		     android:id="@+id/login_firstname_input"  
+		     android:layout_width="wrap_content"  
+		     android:layout_height="wrap_content"  
+		     android:layout_marginTop="3dp"		     
+		     android:text="@string/login_label_firstname"  
+		     /> 
+		      
+		<EditText  
+			     android:id="@+id/firstname_edit"  
+			     android:layout_width="fill_parent"  
+			     android:layout_height="wrap_content" 
+			     android:hint="@string/login_firstname_hint"  
+			     android:singleLine="true"   
+		/> 
+		
+		<!-- lastname -->
+		<TextView  
+		     android:id="@+id/login_lastname_input"  
+		     android:layout_width="wrap_content"  
+		     android:layout_height="wrap_content"  
+		     android:layout_marginTop="3dp"  
+		     android:text="@string/login_label_lastname"  
+		     /> 
+		      
+		<EditText  
+			     android:id="@+id/lastname_edit"  
+			     android:layout_width="fill_parent"  
+			     android:layout_height="wrap_content" 
+			     android:hint="@string/login_lastname_hint"  
+			     android:singleLine="true"   
+		/>
+		
+		<!-- sex -->
+		<TextView  
+		     android:id="@+id/login_sex_input"  
+		     android:layout_width="wrap_content"  
+		     android:layout_height="wrap_content"  
+		     android:layout_marginTop="3dp"  
+		     android:text="@string/login_label_sex"  
+		     /> 
+		      
+		<RadioGroup  
+	        android:id="@+id/radiogroup_sex"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:orientation="horizontal" 
+	    	>  
+	        <RadioButton  
+	            android:id="@+id/radiobutton_male"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:text="@string/male"  
+	        />  
+	        <RadioButton  
+	            android:id="@+id/radiobutton_female"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:text="@string/female"  
+	        />  
+    	</RadioGroup> 
+		
+		<!-- phone number -->
+		<TextView  
+		     android:id="@+id/login_phone_input"  
+		     android:layout_width="wrap_content"  
+		     android:layout_height="wrap_content"  
+		     android:layout_marginTop="3dp"  
+		     android:text="@string/login_label_phone"  
+		     /> 
+		      
+		<EditText  
+			     android:id="@+id/phone_edit"  
+			     android:layout_width="fill_parent"  
+			     android:layout_height="wrap_content" 
+			     android:hint="@string/login_phone_hint"  
+			     android:singleLine="true" 
+			     android:phoneNumber="true"/>   
+				
+		<Button  
+	      android:id="@+id/register_button"  
+	      android:layout_width="wrap_content"  
+	      android:layout_height="wrap_content"  
+	      android:text="@string/login_label_register"  
+		/>
+		
+		<Button  
+	      android:id="@+id/cancel_button"  
+	      android:layout_width="wrap_content"  
+	      android:layout_height="wrap_content"  
+	      android:text="@string/login_label_cancel"  
+		/>
+		
+	</GridLayout>
+	
+</RelativeLayout>

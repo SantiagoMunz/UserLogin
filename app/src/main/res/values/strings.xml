@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PM2.5</string>
+    
+	<string name="login_label_username">用户名</string>
+	<string name="login_username_hint">请输入您的用户名</string>
+	
+	<string name="login_label_password">密码</string>
+	<string name="login_password_hint">请输入您的密码</string>
+	
+	<string name="login_label_password_reinput">确认密码</string>
+	<string name="login_password_reinput_hint">请再输入一次密码</string>
+	
+	<string name="login_label_mail">邮箱</string>
+	<string name="login_mail_hint">请输入您的邮箱</string>
+		
+	<string name="login_label_firstname">姓</string>
+	<string name="login_firstname_hint">请输入您的姓</string>
+	
+	<string name="login_label_lastname">名</string>
+	<string name="login_lastname_hint">请输入您的名</string>
+	
+	<string name="login_label_sex">性别</string>
+	<string name="login_sex_hint">请输入您的性别</string>
+	
+	<string name="login_label_phone">手机号</string>
+	<string name="login_phone_hint">请输入您的手机号</string>
+	
+	<string name="login_label_signin">登录</string>
+	<string name="login_label_register">注册</string>
+	<string name="login_label_cancel">取消</string>
+	
+	<string name="male">男</string>	
+	<string name="female">女</string>
+	
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<GridLayout
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"  
+	    android:orientation="horizontal"  
+	    android:padding="15dip"  
+        android:layout_margin="15dip" 
+	    android:rowCount="8"  
+	    android:columnCount="2" > 
+	    
+	    <!-- username -->
+		<TextView  
+			android:id="@+id/login_user_input"  
+			android:layout_width="match_parent"  
+			android:layout_height="wrap_content"  
+			android:layout_marginTop="5dp"  
+			android:text="@string/login_label_username"  
+		/> 
+		        
+		<EditText  
+			android:id="@+id/username_edit"  
+			android:layout_width="fill_parent"  
+			android:layout_height="wrap_content"  
+			android:hint="@string/login_username_hint" 
+			android:inputType="text"/>
+		
+		<!-- password -->
+		<TextView  
+		     android:id="@+id/login_password_input"  
+		     android:layout_width="match_parent"  
+		     android:layout_height="wrap_content"  
+		     android:layout_marginTop="3dp"  
+		     android:text="@string/login_label_password"  
+		     
+		     /> 
+		      
+		<EditText  
+			     android:id="@+id/password_edit"  
+			     android:layout_width="fill_parent"  
+			     android:layout_height="wrap_content"  
+			     android:hint="@string/login_password_hint"  
+			     android:inputType="textPassword"  
+		/> 
+		
+		<!-- login -->
+		<Button  
+	      android:id="@+id/login_signin_button"  
+	      android:layout_width="wrap_content"  
+	      android:layout_height="wrap_content"  
+	      android:text="@string/login_label_signin"  
+		/>
+		
+		<!-- register -->
+		<Button  
+	      android:id="@+id/login_register_button"  
+	      android:layout_width="wrap_content"  
+	      android:layout_height="wrap_content"  
+	      android:text="@string/login_label_register"  
+		/>
+		
+	</GridLayout>
+</LinearLayout>
