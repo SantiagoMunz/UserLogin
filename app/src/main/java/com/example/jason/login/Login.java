@@ -93,7 +93,7 @@ public class Login extends Activity {
 				        		Intent intent = new Intent(Login.this,MainActivity.class);
 				        		startActivity(intent);
 				        	} else {
-				        		Toast.makeText(Login.this, "µÇÂ¼Ê§°Ü",Toast.LENGTH_LONG ).show();
+				        		Toast.makeText(Login.this, "µÇÂ¼Ê§°Ü£¡",Toast.LENGTH_LONG ).show();
 				        	}
 						} catch (JSONException e) {
 							e.printStackTrace();
